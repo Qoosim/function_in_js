@@ -20,6 +20,7 @@
     }
     makeNoise();
 
+    // FUNCTION WITH PARAMETERS AND ARGUMENTS
     const power = function power(base, exponent) {
       let result = 1;
       for(let count = 0; count < exponent; count++) {
@@ -29,7 +30,8 @@
     }
 
     document.write(power(3, 10));
-
+    
+    // NESTED SCOPE
     const hummus = function(factor) {
 
       const ingredient = function(amount, unit, name) {
@@ -49,6 +51,11 @@
 
     document.write(hummus(2));
 
+    // DECLARATION NOTATION
+    document.write("The future says ", future());
+    function future() {
+      return "No one can tell, we can still have flying cars in future!";
+    }
   </script>
 </body>
 </html>
