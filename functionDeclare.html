@@ -30,8 +30,25 @@
 
     document.write(power(3, 10));
 
+    const hummus = function(factor) {
 
-    
+      const ingredient = function(amount, unit, name) {
+        let ingredientAmount = amount * factor;
+        if (ingredientAmount > 1) {
+          unit += "s";
+        }
+        document.write(`${ingredientAmount} ${unit} ${name}`);
+      };
+      ingredient(1, "can", "chickpeans");
+      ingredient(0.25, "cup", "apple juicy");
+      ingredient(0.35, "cup", "lemon juicy");
+      ingredient(1, "clove", "garlic");
+      ingredient(2, "tablespoon", "olive oil");
+      ingredient(0.5, "teanspoon", "black seed oil");
+    };
+
+    document.write(hummus(2));
+
   </script>
 </body>
 </html>
