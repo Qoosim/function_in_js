@@ -1,10 +1,7 @@
-const fibonacci = (num) => {
-  
-  if (num == 18) return;
-  let arr = [0, 1];
-  
-  fibonacci(arr.push(arr[-2] + arr[-1]));
-
+const factorial = (num) => {
+  if(num < 0) return;
+  if(num == 0) return 1;
+  return num * factorial(num - 1);
 }
 
-fibonacci(18);
+console.log(factorial(5));
